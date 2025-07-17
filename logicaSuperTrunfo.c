@@ -150,8 +150,8 @@ int main() {
       // menu interativo com switch!
 
 
-   printf("\n ==========MENU DE COMPARAÇÃO==========");
-      printf(" \n Escolha o atributo a ser comparado:\n");
+   printf("\n             ========== MENU DE COMPARAÇÃO ==========");
+      printf(" \n >>Escolha UM atributo a ser comparado:\n");
         printf("1. População\n");
           printf("2. Área\n");
             printf("3. PIB\n");
@@ -162,7 +162,7 @@ int main() {
                     scanf("%d", &opcao);
 
 
-        printf("\n ----------RESULTADO DA COMPARAÇÃO----------\n");
+        printf("\n ---------- RESULTADO ----------\n");
             switch (opcao) {
 
               case 1:   //população
@@ -219,20 +219,20 @@ int main() {
             break;
             case 5: //densidade demografica (regra invertida)
             printf("\nAtributo escolhido: densidade demográfica\n");
-            printf("%s: %.3f habitantes por km²\n", cidade1, densidadepopulacional1);
-            printf("%s: %.3f habitantes por km²\n", cidade2, densidadepopulacional2);
+            printf("%s: %.2f habitantes por km²\n", cidade1, densidadepopulacional1);
+            printf("%s: %.2f habitantes por km²\n", cidade2, densidadepopulacional2);
             if (densidadepopulacional1<densidadepopulacional2){
               printf(" CARTA VENCEDORA: %s (menor densidade)\n", cidade1);
             } else if (densidadepopulacional2 < densidadepopulacional1){
               printf(" CARTA VENCEDORA: %s (menor densidade)\n", cidade2);
             } else {
-              printf("EMPATE!");
+              printf("EMPATE!\n");
             }
             break;
             case 6: //pib percapita
             printf("\nAtributo escolhido: PIB per capita\n");
-            printf("%s: %.3f R$\n", cidade1, pibpercapita1);
-            printf("%s: %.3f R$\n", cidade2, pibpercapita2);
+            printf("%s: %.2fR$\n", cidade1, pibpercapita1);
+            printf("%s: %.2fR$\n", cidade2, pibpercapita2);
             if(pibpercapita1>pibpercapita2){
               printf(" CARTA VENCEDORA: %s \n", cidade1);
             } else if (pibpercapita2>pibpercapita1){
@@ -243,8 +243,8 @@ int main() {
             break;
             case 7: //super poder(soma de todos os atributos)
             printf("\n Atributo escolhido: Super poder\n");
-            printf(" %s: %.3f \n", cidade1, superpoder1);
-            printf(" %s: %.3f \n", cidade2, superpoder2);
+            printf(" %s: %.2f \n", cidade1, superpoder1);
+            printf(" %s: %.2f \n", cidade2, superpoder2);
             if(superpoder1>superpoder2){
               printf(" CARTA VENCEDORA: %s \n", cidade1);
 
@@ -341,8 +341,8 @@ int main() {
 
 
     
-      //printf("\n=======FIM=======\n");
-     // printf("\n \n");
+      printf("\n==== FIM ====\n");
+      printf("\n \n");
 
   // return 0;
 }
