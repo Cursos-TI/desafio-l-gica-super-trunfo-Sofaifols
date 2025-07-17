@@ -150,7 +150,7 @@ int main() {
       // menu interativo com switch!
 
 
-   /* printf("\n ==========MENU DE COMPARAÇÃO==========");
+   printf("\n ==========MENU DE COMPARAÇÃO==========");
       printf(" \n Escolha o atributo a ser comparado:\n");
         printf("1. População\n");
           printf("2. Área\n");
@@ -267,7 +267,7 @@ int main() {
             {
             }
 
-*/
+
 
 
 
@@ -278,12 +278,12 @@ int main() {
       //int pontos1 = 0, pontos2 = 0; 
       //criei essas variavei e atribui valor 0 a elas, para usar no incremento 
 
-        printf("\n------------ COMPARAÇÃO DAS CARTAS -----------\n");
-        printf("\n OS ATRIBUTOS A SEREM COMPARADOS: POPULAÇÃO, ÁREA E PONTOS TURÍSTICOS. \n");
+    //    printf("\n------------ COMPARAÇÃO DAS CARTAS -----------\n");
+    //    printf("\n OS ATRIBUTOS A SEREM COMPARADOS: POPULAÇÃO, ÁREA E PONTOS TURÍSTICOS. \n");
 
 //usei os incrementos, funcionou!
 //usei sistema de pontos, como pensado anteriormente mesmo, comparei 3 atributos.
-        printf("POPULAÇÃO:  ");
+    /*    printf("POPULAÇÃO:  ");
     
     if (populacao1 > populacao2) {
         printf("(%lu), Carta 1 ganhou!  \n", populacao1);
@@ -323,7 +323,7 @@ int main() {
         printf("\n====CARTA VENCEDORA====\n");
         printf(" \nCarta 2: %s, de código (%s), população de %lu habitantes, área de %.3f km² e com %d pontos turísticos !\n ", cidade2, codigo2, populacao2, area2, pontosturisticos2);
       }
-        //mudou para switch*/
+        mudou pra switch*/
 
 
 
