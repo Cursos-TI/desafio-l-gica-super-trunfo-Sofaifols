@@ -114,13 +114,13 @@ int main() {
 
            printf("--> População: %lu \n", populacao1);
 
-           printf("--> Área: %.3f km²\n", area1);
+           printf("--> Área: %.2f km²\n", area1);
 
-           printf("--> PIB: %.3f bilhões de reais\n", pib1);
+           printf("--> PIB: %.2f bilhões de reais\n", pib1);
 
            printf("--> Quantidade de pontos turísticos: %d\n", pontosturisticos1);
 
-           printf("--> A densidade demográfica dessa cidade é:  %.3f habitantes por km² \n", densidadepopulacional1);
+           printf("--> A densidade demográfica dessa cidade é:  %.2f habitantes por km² \n", densidadepopulacional1);
 
            printf("--> PIB PER CAPITA da cidade é:  %.2f R$ \n",pibpercapita1);
 
@@ -137,15 +137,15 @@ int main() {
 
           printf("--> População: %lu \n", populacao2);
 
-          printf("--> Área: %.3f km²\n", area2); //delimitei o tanto de casas com .2
+          printf("--> Área: %.2f km²\n", area2); //delimitei o tanto de casas com .2
 
-          printf("--> PIB: %.3f bilhões de reais\n", pib2); //delimitei o tanto de casas com o .2
+          printf("--> PIB: %.2f bilhões de reais\n", pib2); //delimitei o tanto de casas com o .2
 
           printf("--> Quantidade de pontos turísticos: %d \n", pontosturisticos2);
 
-          printf("--> A densidade demográfica desse estado é:  %.3f habitantes por km² \n", densidadepopulacional2);
+          printf("--> A densidade demográfica desse estado é:  %.2f habitantes por km² \n", densidadepopulacional2);
     
-          printf("--> PIB PER CAPITA da cidade é:  %.3fR$ \n",pibpercapita2);
+          printf("--> PIB PER CAPITA da cidade é:  %.2fR$ \n",pibpercapita2);
 
       // menu interativo com switch!
 
