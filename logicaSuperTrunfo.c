@@ -5,8 +5,11 @@ int main() {
       char estado1; //de A a H
       char codigo1[20]; // aqui pode ser qualquer codigo para carta, mas sugeri na pergunta de cadastramento 
       char cidade1[50]; //pode usar ate 49 caracteres pq termina sempre com \0, um espaço reservado
+      char nomeAtributo1[30], nomeAtributo2[30];
       unsigned long int populacao1;
       int pontosturisticos1, opcao;
+      int atributo1, atributo2;
+      float valor1_c1 = 0, valor1_c2 = 0, valor2_c1 = 0, valor2_c2 = 0, somac1, somac2, pontos1 = 0, pontos2 = 0;
       float area1;
       float pib1;
       float densidadepopulacional1;
@@ -149,9 +152,9 @@ int main() {
 
       // menu interativo com switch!
 
-
-   printf("\n             ========== MENU DE COMPARAÇÃO ==========");
-      printf(" \n >>Escolha UM atributo a ser comparado:\n");
+//menu do primeiro atributo
+   printf("\n             ========== MENU ==========");
+      printf(" \n >>Escolha O PRIMEIRO atributo: \n");
         printf("1. População\n");
           printf("2. Área\n");
             printf("3. PIB\n");
@@ -159,10 +162,98 @@ int main() {
                 printf("5. Densidade demográfica\n");
                   printf("6. PIB per capita\n");
                     printf("7. Super poder (a soma de todos os atributos)\n");
-                    scanf("%d", &opcao);
+                    scanf("%d", &atributo1);
+// menu do segundo atributo
 
+       printf(" \n >>Escolha O SEGUNDO atributo(diferente do primeiro):\n");
+       if (atributo1 != 1) printf("1. População\n");
+        if (atributo1 != 2)printf("2. Área\n");
+         if (atributo1 != 3) printf("3. PIB\n");
+          if (atributo1 != 4)  printf("4. Pontos turísticos\n");
+           if (atributo1 != 5) printf("5. Densidade demográfica\n");
+            if (atributo1 != 6)  printf("6. PIB per capita\n");
+             if (atributo1 != 7)   printf("7. Super poder (a soma de todos os atributos)\n");
+              scanf("%d", &atributo2);
+      if (atributo1 == atributo2){
+        printf("\n você escolheu o mesmo atributo. Reinicie a comparação\n ");
+        return 0;
+      }
+       switch (atributo1) {
+          case 1: valor1_c1 = populacao1; 
+          break;
+          case 2: valor1_c1 = area1;
+          break;
+          case 3: valor1_c1 = pib1;
+          break;
+          case 4: valor1_c1 = pontosturisticos1;
+          break;
+          case 5: valor1_c1 = densidadepopulacional1;
+          break;
+          case 6: valor1_c1 = pibpercapita1;
+          break;
+          case 7: valor1_c1 = superpoder1;
+          break;
+       }
 
-        printf("\n ---------- RESULTADO ----------\n");
+       switch (atributo2) {
+        case 1: valor2_c1 = populacao1; 
+          break;
+          case 2: valor2_c1 = area1;
+          break;
+          case 3: valor2_c1 = pib1;
+          break;
+          case 4: valor2_c1 = pontosturisticos1;
+          break;
+          case 5: valor2_c1 = densidadepopulacional1;
+          break;
+          case 6: valor2_c1 = pibpercapita1;
+          break;
+          case 7: valor2_c1 = superpoder1;
+          break;
+       }
+       switch (atributo1){
+        case 1: valor1_c2 = populacao2;
+        break;
+        case 2: valor1_c2 = area2;
+        break;
+        case 3: valor1_c2 = pib2;
+        break;
+        case 4: valor1_c2 = pontosturisticos2;
+        break;
+        case 5: valor1_c2 = densidadepopulacional2;
+        break;
+        case 6: valor1_c2 = pibpercapita2;
+        break;
+
+       }
+       switch (atributo2){
+        case 1: valor2_c2 = populacao2;
+        break;
+        case 2: valor2_c2 = area2;
+        break;
+        case 3: valor2_c2 = pib2;
+        break;
+        case 4: valor2_c2 = pontosturisticos2;
+        break;
+        case 5: valor2_c2 = densidadepopulacional2;
+        break;
+        case 6: valor2_c2 = pibpercapita2;
+        break;
+       }
+
+       printf("\n ==== COMPARAÇÃO DOS ATRIBUTOS ====\n");
+       printf("\n >>>> %s: \n %s: %.2f\n %s: %.2f\n", nomeAtributo1, cidade1, valor1_c1, cidade2, valor1_c2);
+       printf("\n >>>> %s: \n %s: %.2f\n %s: %.2f\n", nomeAtributo2, cidade1, valor1_c1, cidade2, valor1_c2);
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       /* printf("\n ---------- RESULTADO ----------\n");
             switch (opcao) {
 
               case 1:   //população
@@ -260,12 +351,10 @@ int main() {
             break;
 
 
+*/
 
 
-
-            }
-            {
-            }
+            
 
 
 
